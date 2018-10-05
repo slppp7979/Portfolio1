@@ -34,37 +34,6 @@ public class CommentDAO {
       return conn;
 
    }
-
-   // y_comment 테이블의 cNum으로 데이터 한 개 가져오기
-   
-   public ArrayList<CommentVO> getNum(int cNum) {
-
-      CommentVO vo = new CommentVO();
-      ArrayList<CommentVO> list = new ArrayList<CommentVO>(); 
-      String sql = "select * from y_comment where cNum=?"; // cNum을 기준으로 가져온다.
-
-      try {
-         conn = getInstance();
-         pstmt = conn.prepareStatement(sql);
-         pstmt.setInt(1, cNum);
-
-         rs = pstmt.executeQuery();
-         rs.next(); // 하나이므로 if문이나 while문에 넣어줄 필요가 없다.
-
-         vo.setcNum(rs.getInt("cNum"));
-         vo.setcId(rs.getString("cId"));
-         vo.setcContent(rs.getString("cContent"));
-         vo.setcReg_date(rs.getString("cReg_date"));
-         vo.setcStar(rs.getInt("cStar"));
-         vo.setcReg_flag(rs.getInt("cReg_flag"));
-         
-         list.add(vo);
-         
-      } catch (Exception e) {
-         e.printStackTrace();
-      }
-      return list;
-   }
    
    public void commentInsert(CommentVO vo) {
 	   

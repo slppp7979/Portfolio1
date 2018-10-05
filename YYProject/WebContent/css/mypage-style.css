@@ -112,6 +112,9 @@ ul.tabs li.current{
   margin: 0 auto;
   background-color: #FFCD12;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .change-bottom .change-button{

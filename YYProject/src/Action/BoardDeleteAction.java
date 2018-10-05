@@ -22,9 +22,10 @@ public class BoardDeleteAction implements Action {
 		// dao 메서드 연결
 		FoodWriteDAO dao = new FoodWriteDAO();
 		dao.boardDelete(bNum);
+		dao.finally_close();
 		
 		// 메서드 종료 후, 해당 location-food창으로 이동
-		response.sendRedirect("/YYProject/foodWrite?actionName=list&l="+URLEncoder.encode(location, "UTF-8"));
+		response.sendRedirect("/YYProject/user?actionName=list&l="+URLEncoder.encode(location, "UTF-8"));
 		// l에다가 location을 담아서 FoodListAction으로 보내준다.
 	}
 }

@@ -22,23 +22,22 @@
 
 /*메뉴바*/
 .header .menu{
-  width: 15%;
+  width: 20%;
   height: 100%;
   float: left;
   overflow: hidden;
-  margin-left: 50px;
+  margin: 0 auto;
 }
-
-/*-----food-----*/
 /*전체*/
 .header .menu .menu-food{
-  width: 50%;
+  width: 100%;
   height: 100%;
   float: left;
-  text-align: right;
-  margin-top: 58px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 /*글씨*/
 .menu-food p{
   font-size: 20px;
@@ -46,34 +45,7 @@
   color: black;
   padding-right: 8px;
 }
-/*-----food-----*/
-
-
-/*------cafe-----*/
-/*전체*/
-.header .menu .menu-cafe{
-  width: 50%;
-  height: 100%;
-  float: left;
-  text-align: center;
-  margin-top: 90px;
- 
-}
-
-.header .menu .menu-food .menu-food-i > i{
-	font-size : 30px;
-	color : #0054FF;
-	font-weight : bold;
-	padding-right : 15px;
-}
-
-/*글씨*/
-.menu-cafe p{
-  font-size: 20px;
-  font-family: 'Baloo Tammudu', cursive;
-  color: black;
-}
-/*------cafe----*/
+/*메뉴바*/
 
 /*로고*/
 .header .logo{
@@ -82,32 +54,30 @@
   float: left;
   text-align: center;
   font-family: 'Baloo Tammudu', cursive; /*logo font*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo p{
-  padding-top: 90px;
-  padding-left: 60px;
   font-size: 80px;
   font-style: italic;
   color: black;
   text-shadow: 1.5px 1.5px 1.5px black;/*가로세로흐림색상*/
+  margin-top: 30px;
 }
 
 /*회원-비로그인*/
 .header .member{
-  width: 15%;
+  width: 20%;
   height: 100%;
   float: right;
-  padding-top: 40px;
-  margin-right: 20px;
 }
 /*회원-로그인*/
 .header .member2{
-  width: 15%;
+  width: 20%;
   height: 100%;
   float: right;
-  padding-top: 40px;
-  margin-right: 20px;
 }
 /*-----login-----*/
 /*전체*/
@@ -116,7 +86,9 @@
   height: 100%;
   float: left;
   text-align: center;
-  padding-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*sessionID*/
 .header .member2 .member-user{
@@ -124,7 +96,9 @@
   height: 100%;
   float: left;
   text-align: left;
-  padding-top: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*sessionID 글씨*/
 .member-user p{
@@ -139,7 +113,9 @@
   height: 100%;
   float: left;
   text-align: left;
-  padding-top: 90px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .member-logout p{
   font-size: 15px;
@@ -166,7 +142,9 @@
   height: 100%;
   float: left;
   text-align: left;
-  padding-top: 90px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 /*글씨*/

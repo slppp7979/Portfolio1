@@ -318,31 +318,6 @@
    text-align: center;
    float: left;
 }
-/*메뉴에 체크*/
-
-.header .menu .menu-food{
-  width: 50%;
-  height: 100%;
-  float: left;
-  text-align: right;
-  margin-top: 58px;
-}
-
-.header .menu .menu-cafe{
-  width: 50%;
-  height: 100%;
-  float: left;
-  text-align: center;
-  margin-top: 90px;
-}
-
-.header .menu .menu-food .menu-food-i > i{
-	font-size : 30px;
-	color : #0054FF;
-	font-weight : bold;
-	padding-right : 15px;
-}
-/*메뉴에 체크*/
 
 .writeAdmin{
   font-family: 'Nanum Gothic Coding', monospace;
@@ -476,7 +451,7 @@
 
 /*리플content*/
 .reple-content {
-   width: 65%;
+   width: 70%;
    height: 100%;
    float: left;
    background-color: white;
@@ -519,7 +494,7 @@
 
 /*리플버튼*/
 .reple-button {
-   width: 10%;
+   width: 5%;
    height: 100%;
    float: left;
 }

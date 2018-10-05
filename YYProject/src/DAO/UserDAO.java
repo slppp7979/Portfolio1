@@ -95,7 +95,7 @@ public class UserDAO {
 	
 	// 아이디 중복체크
 	public int checkId(String inputId) {
-		String sql = "select * from user WHERE id = ?";	// inputId에 해당하는 id가 테이블 내에 있으면 rs.next()로 받아옴
+		String sql = "select * from member WHERE id = ?";	// inputId에 해당하는 id가 테이블 내에 있으면 rs.next()로 받아옴
 		
 		try {
 			pstmt = conn.prepareStatement(sql);
